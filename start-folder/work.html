@@ -1,21 +1,67 @@
+
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>課題一覧</title>
+    <title>課題提出場所</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .work-list {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: white;
+        }
+
+        .work-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .work-list li {
+            margin: 15px 0;
+        }
+
+        .work-list a {
+            color: #5146a6;
+            font-size: 20px;
+            text-decoration: underline;
+        }
+
+        .work-footer {
+            background-color: #4449bb;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+    </style>
 </head>
 <body>
-    <h1>課題一覧</h1>
+    <header style="background-color: #4449bb; color: white; text-align: center; padding: 35px 20px;">
+        <h1>課題提出場所</h1>
 
-    <ul>
-        <li>
-            <a href="JavaScriptWork/work_1_3/1_3function.html">
-                関数課題
-            </a>
-        </li>
-    </ul>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="../index.html">ホーム</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+                <li><a href="work.html">課題</a></li>
+                <li><a href="calculator.html">電卓</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <a href="/testrepo/index.html">ホームへ戻る</a>
+    <main>
+        <section class="work-list">
+            <ul>
+                <li><a href="JavaScriptWork/work_1_3/1_3function.html">1_3Work課題</a></li>
+                <li><a href="#">1_4Work課題</a></li>
+                <li><a href="#">1_6Work課題</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="work-footer">
+        <p>&copy; 2026 私のポートフォリオ</p>
+    </footer>
 </body>
 </html>
