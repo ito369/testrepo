@@ -2,7 +2,7 @@ let wantApple = 4;
 
 let stockApple = 3;
 
-if (stockApplez >= wantApple) {
+if (stockApple >= wantApple) {
 
   console.log("希望通りカートに入れます。");
 
