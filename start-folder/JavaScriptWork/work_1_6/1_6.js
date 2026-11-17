@@ -1,0 +1,30 @@
+    // コーヒーを作る関数
+function makeCoffee() {
+    console.log("☕ スタッフ：先にコーヒーを準備します...");
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("✅ コーヒーができました！");
+        resolve("コーヒー");
+      }, 2000); // 2秒
+    });
+  }
+
+    // サンドイッチを作る関数
+  function makeSandwich() {
+    console.log("🥪 スタッフ：次にサンドイッチを準備します...");
+    return new Promise((resolve) => {
+      setTimeout(() => {
+        console.log("✅ サンドイッチができました！");
+        resolve("サンドイッチ");
+      }, 3000); // 3秒
+    });
+  }
+
+    // 並列で作って、終わったら配膳
+  async function serveCustomer() {
+    await Promise.all([makeCoffee(),makeSandwich()]);
+    console.log("🍽️ スタッフ：すべてできたので配膳します！");
+  }
+
+  console.log("🥪 お客さんがコーヒーとサンドイッチを注文しました");
+  serveCustomer();
